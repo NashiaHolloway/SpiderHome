@@ -85,6 +85,21 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\WebResources.de.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebResources.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\WebResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\WebResources.es.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebResources.es.resx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -115,7 +130,24 @@
       <DependentUpon>Spider.Master</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="App_GlobalResources\WebResources.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>WebResources.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\WebResources.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>WebResources.es.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\WebResources.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>WebResources.de.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
